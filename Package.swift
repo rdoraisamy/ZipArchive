@@ -19,7 +19,7 @@ let package = Package(
             path: "SSZipArchive",
             exclude: [
                 "Info.plist",
-                "minizip/LICENCE",
+                "minizip/LICENSE",
             ],
             cSettings: [
                 .define("HAVE_INTTYPES_H"),
