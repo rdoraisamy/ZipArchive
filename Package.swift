@@ -17,7 +17,10 @@ let package = Package(
         .target(
             name: "ZipArchive",
             path: "SSZipArchive",
-            exclude: ["info.plist"],
+            exclude: [
+                "Info.plist",
+                "minizip/LICENCE",
+            ],
             cSettings: [
                 .define("HAVE_INTTYPES_H"),
                 .define("HAVE_PKCRYPT"),
