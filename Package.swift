@@ -28,7 +28,8 @@ let package = Package(
                 .linkedLibrary("z"),
                 .linkedLibrary("iconv"),
                 .linkedFramework("Security"),
-            ]
+            ],
+            exclude: ["info.plist", "minizip/LICENSE"],
         )
     ]
 )
