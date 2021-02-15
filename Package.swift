@@ -17,6 +17,7 @@ let package = Package(
         .target(
             name: "ZipArchive",
             path: "SSZipArchive",
+            exclude: ["info.plist", "minizip/LICENSE"],
             cSettings: [
                 .define("HAVE_INTTYPES_H"),
                 .define("HAVE_PKCRYPT"),
@@ -29,7 +30,6 @@ let package = Package(
                 .linkedLibrary("iconv"),
                 .linkedFramework("Security"),
             ],
-            exclude: ["info.plist", "minizip/LICENSE"],
         )
     ]
 )
